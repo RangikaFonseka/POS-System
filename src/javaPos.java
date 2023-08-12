@@ -1,5 +1,7 @@
 
 import java.text.MessageFormat;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -50,14 +52,14 @@ public class javaPos extends javax.swing.JFrame {
          double cTotal1=Double.parseDouble(jSubTotal.getText());
          
          double cTax=(cTotal1* 3.9)/100 ;
-         String iTaxTotal = String.format("£ %.2f",cTax);
+         String iTaxTotal = String.format("Rs %.2f",cTax);
          
          jTax.setText(iTaxTotal);
          
-         String iSubTotal = String.format("£ %.2f",cTotal1);
+         String iSubTotal = String.format("Rs %.2f",cTotal1);
          jSubTotal.setText(iSubTotal);
          
-         String iTotal = String.format("£ %.2f",cTotal1 + cTax);
+         String iTotal = String.format("RS %.2f",cTotal1 + cTax);
          jTotal.setText( iTotal);
          
          
@@ -85,7 +87,7 @@ public class javaPos extends javax.swing.JFrame {
     double cTax= (sum * 3.9)/100 ;
     double cChange = (cash - (sum + cTax));
     
-    String ChangeGiven = String.format("$ %.2f",cChange);
+    String ChangeGiven = String.format("RS %.2f",cChange);
     jBalance.setText(ChangeGiven);
     
     }
@@ -182,7 +184,6 @@ public class javaPos extends javax.swing.JFrame {
         jReste = new javax.swing.JButton();
         jRemove = new javax.swing.JButton();
         jPrint = new javax.swing.JButton();
-        jBar = new javax.swing.JTextField();
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
 
@@ -203,7 +204,8 @@ public class javaPos extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton2.setText("Items");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -212,7 +214,7 @@ public class javaPos extends javax.swing.JFrame {
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 90, 80));
 
         B1.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
-        B1.setText("Rice & Curry(C)");
+        B1.setText("Items");
         B1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 B1ActionPerformed(evt);
@@ -220,7 +222,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 90, 80));
 
-        jButton38.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton38.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton38.setText("Items");
         jButton38.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton38ActionPerformed(evt);
@@ -228,7 +231,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 90, 80));
 
-        jButton39.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton39.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton39.setText("Items");
         jButton39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton39ActionPerformed(evt);
@@ -236,7 +240,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 90, 80));
 
-        jButton40.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton40.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton40.setText("Items");
         jButton40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton40ActionPerformed(evt);
@@ -244,7 +249,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton40, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, 90, 80));
 
-        jButton41.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton41.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton41.setText("Items");
         jButton41.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton41ActionPerformed(evt);
@@ -252,7 +258,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton41, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 90, 80));
 
-        jButton42.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton42.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton42.setText("Items");
         jButton42.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton42ActionPerformed(evt);
@@ -260,7 +267,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton42, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 90, 80));
 
-        jButton43.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton43.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton43.setText("Items");
         jButton43.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton43ActionPerformed(evt);
@@ -268,7 +276,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton43, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 90, 80));
 
-        jButton44.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton44.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton44.setText("Items");
         jButton44.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton44ActionPerformed(evt);
@@ -276,7 +285,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton44, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 90, 80));
 
-        jButton45.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton45.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton45.setText("Items");
         jButton45.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton45ActionPerformed(evt);
@@ -284,7 +294,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton45, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 90, 80));
 
-        jButton46.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton46.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton46.setText("Items");
         jButton46.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton46ActionPerformed(evt);
@@ -292,7 +303,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton46, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, 90, 80));
 
-        jButton47.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton47.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton47.setText("Items");
         jButton47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton47ActionPerformed(evt);
@@ -300,7 +312,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton47, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 90, 80));
 
-        jButton48.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton48.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton48.setText("Items");
         jButton48.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton48ActionPerformed(evt);
@@ -308,7 +321,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton48, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 90, 80));
 
-        jButton49.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton49.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton49.setText("Items");
         jButton49.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton49ActionPerformed(evt);
@@ -316,7 +330,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton49, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 90, 80));
 
-        jButton50.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton50.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton50.setText("Items");
         jButton50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton50ActionPerformed(evt);
@@ -324,7 +339,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton50, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 90, 80));
 
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton4.setText("Items");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -332,7 +348,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, 90, 80));
 
-        jButton51.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton51.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton51.setText("Items");
         jButton51.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton51ActionPerformed(evt);
@@ -340,7 +357,8 @@ public class javaPos extends javax.swing.JFrame {
         });
         jPanel2.add(jButton51, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 140, 90, 80));
 
-        jButton52.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jButton52.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        jButton52.setText("Items");
         jButton52.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton52ActionPerformed(evt);
@@ -360,7 +378,7 @@ public class javaPos extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 260, 240));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 260, 330));
 
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -608,13 +626,6 @@ public class javaPos extends javax.swing.JFrame {
         jPanel4.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 20, 390, 220));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 1300, 250));
-
-        jBar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 260, 50));
 
         pack();
         setLocationRelativeTo(null);
@@ -884,10 +895,6 @@ public class javaPos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton50ActionPerformed
 
-    private void jBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jBarActionPerformed
-
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -900,8 +907,21 @@ public class javaPos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton52ActionPerformed
 
+    
+    
+    private JFrame frame;
+    
     private void jExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExitActionPerformed
-        // TODO add your handling code here:
+       
+        frame=new JFrame("Exit");
+        
+        if(JOptionPane.showConfirmDialog(frame,"Confirm if you want to exit","point of Sale",JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION){
+        
+                System.exit(0);
+        }
+        
+        
+        
     }//GEN-LAST:event_jExitActionPerformed
 
     private void jRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRemoveActionPerformed
@@ -1010,7 +1030,6 @@ public class javaPos extends javax.swing.JFrame {
     private javax.swing.JButton btnc;
     private javax.swing.JComboBox<String> btnpay;
     private javax.swing.JTextField jBalance;
-    private javax.swing.JTextField jBar;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton38;
     private javax.swing.JButton jButton39;
